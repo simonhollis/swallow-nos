@@ -1,0 +1,258 @@
+\hypertarget{_swallow-helpers_8xc}{}\section{C\+:/work/swallow-\/nos/src/\+Swallow-\/helpers.xc File Reference}
+\label{_swallow-helpers_8xc}\index{C\+:/work/swallow-\/nos/src/\+Swallow-\/helpers.\+xc@{C\+:/work/swallow-\/nos/src/\+Swallow-\/helpers.\+xc}}
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$platform.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/helpers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}swallow\+\_\+comms.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_swallow-helpers_8xc_af6442d33deb8d3d0dcb8ee5c37f65a17}{B\+O\+A\+R\+D\+S\+\_\+\+W}~5
+\item 
+\#define \hyperlink{_swallow-helpers_8xc_aef2d817325c72b838c4f25e92bdc8134}{D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H}~1024
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_aba1d74fda7711c040523169918cf186c}{row\+Col\+To\+Node\+Id} (unsigned row, unsigned column, unsigned layer)
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_a58f5683194e9d62e69b9d73ce1416055}{node\+Index\+To\+Id} (unsigned node)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-helpers_8xc_a096630d81be63da93af11a77c35163e8}{build\+Chan\+Id} (unsigned node, unsigned chan\+Index)
+\item 
+\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} \hyperlink{_swallow-helpers_8xc_ae766ff2b68dabf370997e2005ce2dc4d}{get\+New\+Channel} ()
+\item 
+void \hyperlink{_swallow-helpers_8xc_acea152b967b1954ceec7cc18acaec48d}{connect\+Chanend} (chanend c, \hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} dest)
+\item 
+void \hyperlink{_swallow-helpers_8xc_a4fc6da8d25bce838539832b011089fb2}{connect\+Channel} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, \hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} dest)
+\item 
+void \hyperlink{_swallow-helpers_8xc_acb55a62300229638e574bc20c8d8d245}{free\+Chanend\+\_\+sjh} (chanend c)
+\item 
+void \hyperlink{_swallow-helpers_8xc_a7821533e38b1011d9ce4ba11bb458136}{free\+Channel} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-helpers_8xc_a6460b117129f2bfbd74efd3cee5da9e0}{chanend\+Listen} (chanend c)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-helpers_8xc_a9e2783667dec0a1a6a2c657b3b46e1a2}{channel\+Listen} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c)
+\item 
+void \hyperlink{_swallow-helpers_8xc_a722c9a50b1ba184815f3ca8de58c331f}{channel\+Send\+Word} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, unsigned value)
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_a7af156772a17978b0db4f1f209da7bdd}{channel\+Receive\+Word} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c)
+\item 
+void \hyperlink{_swallow-helpers_8xc_a7b41998c9b6ff64733cf388aab7f21b1}{channel\+Receive\+Words} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, unsigned \&length, unsigned buffer\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_swallow-helpers_8xc_ab09ce1b802b3c3c3a13b80db7139191d}{channel\+Send\+Words} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, unsigned \&length, unsigned buffer\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_swallow-helpers_8xc_ad2bd3e35e98c361a123802d89f23292d}{print\+Receive\+Words} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, unsigned \&length, unsigned buffer\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_swallow-helpers_8xc_a1c66ffa18e1dfc18667ee4aedfc32b25}{print\+Send\+Words} (\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, \hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} dest, unsigned \&length, unsigned buffer\mbox{[}$\,$\mbox{]})
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_ad40c30ba1915e96e0addb8cc251e30c4}{get\+Specific\+Local\+Channel} (unsigned channel\+No)
+\item 
+void \hyperlink{_swallow-helpers_8xc_aef17d0ecd6fc0b716d8bd40a189075f7}{core\+Send\+Words} (streaming chanend output, unsigned data\mbox{[}$\,$\mbox{]}, unsigned data\+\_\+length)
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_adfe491501333abd26b2966f39837723e}{core\+Receive\+Words} (streaming chanend input, unsigned receive\+Buffer\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_swallow-helpers_8xc_a38576ce5d46bc65b1e600ab2e793ab71}{core\+Send\+Bytes} (streaming chanend output, char data\mbox{[}$\,$\mbox{]}, unsigned data\+\_\+length)
+\item 
+void \hyperlink{_swallow-helpers_8xc_afbd3e0a5dbd4afafc3283a8a95fa750c}{Sw\+Print\+Unsigned} (streaming chanend output, unsigned value)
+\item 
+unsigned \hyperlink{_swallow-helpers_8xc_a2da912eccb2d640abfb2a3ebdbf3efbd}{string\+To\+Chars} (const char s\mbox{[}$\,$\mbox{]}, char c\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_swallow-helpers_8xc_a454f40f7afcac737d38f0c5774dd62b8}{Sw\+Print\+String} (streaming chanend output, const char string\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_swallow-helpers_8xc_af6442d33deb8d3d0dcb8ee5c37f65a17}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!B\+O\+A\+R\+D\+S\+\_\+\+W@{B\+O\+A\+R\+D\+S\+\_\+\+W}}
+\index{B\+O\+A\+R\+D\+S\+\_\+\+W@{B\+O\+A\+R\+D\+S\+\_\+\+W}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{B\+O\+A\+R\+D\+S\+\_\+\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+A\+R\+D\+S\+\_\+\+W~5}\label{_swallow-helpers_8xc_af6442d33deb8d3d0dcb8ee5c37f65a17}
+\hypertarget{_swallow-helpers_8xc_aef2d817325c72b838c4f25e92bdc8134}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H@{D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H}}
+\index{D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H@{D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+M\+A\+X\+L\+E\+N\+G\+T\+H~1024}\label{_swallow-helpers_8xc_aef2d817325c72b838c4f25e92bdc8134}
+
+
+\subsection{Function Documentation}
+\hypertarget{_swallow-helpers_8xc_a096630d81be63da93af11a77c35163e8}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!build\+Chan\+Id@{build\+Chan\+Id}}
+\index{build\+Chan\+Id@{build\+Chan\+Id}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{build\+Chan\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} build\+Chan\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{node, }
+\item[{unsigned}]{chan\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a096630d81be63da93af11a77c35163e8}
+\hypertarget{_swallow-helpers_8xc_a6460b117129f2bfbd74efd3cee5da9e0}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!chanend\+Listen@{chanend\+Listen}}
+\index{chanend\+Listen@{chanend\+Listen}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{chanend\+Listen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} chanend\+Listen (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a6460b117129f2bfbd74efd3cee5da9e0}
+\hypertarget{_swallow-helpers_8xc_a9e2783667dec0a1a6a2c657b3b46e1a2}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!channel\+Listen@{channel\+Listen}}
+\index{channel\+Listen@{channel\+Listen}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{channel\+Listen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} channel\+Listen (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a9e2783667dec0a1a6a2c657b3b46e1a2}
+\hypertarget{_swallow-helpers_8xc_a7af156772a17978b0db4f1f209da7bdd}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!channel\+Receive\+Word@{channel\+Receive\+Word}}
+\index{channel\+Receive\+Word@{channel\+Receive\+Word}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{channel\+Receive\+Word}]{\setlength{\rightskip}{0pt plus 5cm}unsigned channel\+Receive\+Word (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a7af156772a17978b0db4f1f209da7bdd}
+\hypertarget{_swallow-helpers_8xc_a7b41998c9b6ff64733cf388aab7f21b1}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!channel\+Receive\+Words@{channel\+Receive\+Words}}
+\index{channel\+Receive\+Words@{channel\+Receive\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{channel\+Receive\+Words}]{\setlength{\rightskip}{0pt plus 5cm}void channel\+Receive\+Words (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{unsigned \&}]{length, }
+\item[{unsigned}]{buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a7b41998c9b6ff64733cf388aab7f21b1}
+\hypertarget{_swallow-helpers_8xc_a722c9a50b1ba184815f3ca8de58c331f}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!channel\+Send\+Word@{channel\+Send\+Word}}
+\index{channel\+Send\+Word@{channel\+Send\+Word}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{channel\+Send\+Word}]{\setlength{\rightskip}{0pt plus 5cm}void channel\+Send\+Word (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{unsigned}]{value}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a722c9a50b1ba184815f3ca8de58c331f}
+\hypertarget{_swallow-helpers_8xc_ab09ce1b802b3c3c3a13b80db7139191d}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!channel\+Send\+Words@{channel\+Send\+Words}}
+\index{channel\+Send\+Words@{channel\+Send\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{channel\+Send\+Words}]{\setlength{\rightskip}{0pt plus 5cm}void channel\+Send\+Words (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{unsigned \&}]{length, }
+\item[{unsigned}]{buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_ab09ce1b802b3c3c3a13b80db7139191d}
+\hypertarget{_swallow-helpers_8xc_acea152b967b1954ceec7cc18acaec48d}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!connect\+Chanend@{connect\+Chanend}}
+\index{connect\+Chanend@{connect\+Chanend}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{connect\+Chanend}]{\setlength{\rightskip}{0pt plus 5cm}void connect\+Chanend (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c, }
+\item[{{\bf endpoint}}]{dest}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_acea152b967b1954ceec7cc18acaec48d}
+\hypertarget{_swallow-helpers_8xc_a4fc6da8d25bce838539832b011089fb2}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!connect\+Channel@{connect\+Channel}}
+\index{connect\+Channel@{connect\+Channel}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{connect\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void connect\+Channel (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{{\bf endpoint}}]{dest}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a4fc6da8d25bce838539832b011089fb2}
+\hypertarget{_swallow-helpers_8xc_adfe491501333abd26b2966f39837723e}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!core\+Receive\+Words@{core\+Receive\+Words}}
+\index{core\+Receive\+Words@{core\+Receive\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{core\+Receive\+Words}]{\setlength{\rightskip}{0pt plus 5cm}unsigned core\+Receive\+Words (
+\begin{DoxyParamCaption}
+\item[{streaming chanend}]{input, }
+\item[{unsigned}]{receive\+Buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_adfe491501333abd26b2966f39837723e}
+\hypertarget{_swallow-helpers_8xc_a38576ce5d46bc65b1e600ab2e793ab71}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!core\+Send\+Bytes@{core\+Send\+Bytes}}
+\index{core\+Send\+Bytes@{core\+Send\+Bytes}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{core\+Send\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}void core\+Send\+Bytes (
+\begin{DoxyParamCaption}
+\item[{streaming chanend}]{output, }
+\item[{char}]{data\mbox{[}$\,$\mbox{]}, }
+\item[{unsigned}]{data\+\_\+length}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a38576ce5d46bc65b1e600ab2e793ab71}
+\hypertarget{_swallow-helpers_8xc_aef17d0ecd6fc0b716d8bd40a189075f7}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!core\+Send\+Words@{core\+Send\+Words}}
+\index{core\+Send\+Words@{core\+Send\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{core\+Send\+Words}]{\setlength{\rightskip}{0pt plus 5cm}void core\+Send\+Words (
+\begin{DoxyParamCaption}
+\item[{streaming chanend}]{output, }
+\item[{unsigned}]{data\mbox{[}$\,$\mbox{]}, }
+\item[{unsigned}]{data\+\_\+length}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_aef17d0ecd6fc0b716d8bd40a189075f7}
+\hypertarget{_swallow-helpers_8xc_acb55a62300229638e574bc20c8d8d245}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!free\+Chanend\+\_\+sjh@{free\+Chanend\+\_\+sjh}}
+\index{free\+Chanend\+\_\+sjh@{free\+Chanend\+\_\+sjh}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{free\+Chanend\+\_\+sjh}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Chanend\+\_\+sjh (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_acb55a62300229638e574bc20c8d8d245}
+\hypertarget{_swallow-helpers_8xc_a7821533e38b1011d9ce4ba11bb458136}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!free\+Channel@{free\+Channel}}
+\index{free\+Channel@{free\+Channel}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{free\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Channel (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a7821533e38b1011d9ce4ba11bb458136}
+\hypertarget{_swallow-helpers_8xc_ae766ff2b68dabf370997e2005ce2dc4d}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!get\+New\+Channel@{get\+New\+Channel}}
+\index{get\+New\+Channel@{get\+New\+Channel}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{get\+New\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf channel} get\+New\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_ae766ff2b68dabf370997e2005ce2dc4d}
+\hypertarget{_swallow-helpers_8xc_ad40c30ba1915e96e0addb8cc251e30c4}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!get\+Specific\+Local\+Channel@{get\+Specific\+Local\+Channel}}
+\index{get\+Specific\+Local\+Channel@{get\+Specific\+Local\+Channel}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{get\+Specific\+Local\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}unsigned get\+Specific\+Local\+Channel (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+No}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_ad40c30ba1915e96e0addb8cc251e30c4}
+\hypertarget{_swallow-helpers_8xc_a58f5683194e9d62e69b9d73ce1416055}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!node\+Index\+To\+Id@{node\+Index\+To\+Id}}
+\index{node\+Index\+To\+Id@{node\+Index\+To\+Id}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{node\+Index\+To\+Id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned node\+Index\+To\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{node}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a58f5683194e9d62e69b9d73ce1416055}
+\hypertarget{_swallow-helpers_8xc_ad2bd3e35e98c361a123802d89f23292d}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!print\+Receive\+Words@{print\+Receive\+Words}}
+\index{print\+Receive\+Words@{print\+Receive\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{print\+Receive\+Words}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Receive\+Words (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{unsigned \&}]{length, }
+\item[{unsigned}]{buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_ad2bd3e35e98c361a123802d89f23292d}
+\hypertarget{_swallow-helpers_8xc_a1c66ffa18e1dfc18667ee4aedfc32b25}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!print\+Send\+Words@{print\+Send\+Words}}
+\index{print\+Send\+Words@{print\+Send\+Words}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{print\+Send\+Words}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Send\+Words (
+\begin{DoxyParamCaption}
+\item[{{\bf channel}}]{c, }
+\item[{{\bf channel}}]{dest, }
+\item[{unsigned \&}]{length, }
+\item[{unsigned}]{buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a1c66ffa18e1dfc18667ee4aedfc32b25}
+\hypertarget{_swallow-helpers_8xc_aba1d74fda7711c040523169918cf186c}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!row\+Col\+To\+Node\+Id@{row\+Col\+To\+Node\+Id}}
+\index{row\+Col\+To\+Node\+Id@{row\+Col\+To\+Node\+Id}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{row\+Col\+To\+Node\+Id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned row\+Col\+To\+Node\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{row, }
+\item[{unsigned}]{column, }
+\item[{unsigned}]{layer}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_aba1d74fda7711c040523169918cf186c}
+\hypertarget{_swallow-helpers_8xc_a2da912eccb2d640abfb2a3ebdbf3efbd}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!string\+To\+Chars@{string\+To\+Chars}}
+\index{string\+To\+Chars@{string\+To\+Chars}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{string\+To\+Chars}]{\setlength{\rightskip}{0pt plus 5cm}unsigned string\+To\+Chars (
+\begin{DoxyParamCaption}
+\item[{const char}]{s\mbox{[}$\,$\mbox{]}, }
+\item[{char}]{c\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a2da912eccb2d640abfb2a3ebdbf3efbd}
+\hypertarget{_swallow-helpers_8xc_a454f40f7afcac737d38f0c5774dd62b8}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!Sw\+Print\+String@{Sw\+Print\+String}}
+\index{Sw\+Print\+String@{Sw\+Print\+String}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{Sw\+Print\+String}]{\setlength{\rightskip}{0pt plus 5cm}void Sw\+Print\+String (
+\begin{DoxyParamCaption}
+\item[{streaming chanend}]{output, }
+\item[{const char}]{string\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_a454f40f7afcac737d38f0c5774dd62b8}
+\hypertarget{_swallow-helpers_8xc_afbd3e0a5dbd4afafc3283a8a95fa750c}{}\index{Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}!Sw\+Print\+Unsigned@{Sw\+Print\+Unsigned}}
+\index{Sw\+Print\+Unsigned@{Sw\+Print\+Unsigned}!Swallow-\/helpers.\+xc@{Swallow-\/helpers.\+xc}}
+\subsubsection[{Sw\+Print\+Unsigned}]{\setlength{\rightskip}{0pt plus 5cm}void Sw\+Print\+Unsigned (
+\begin{DoxyParamCaption}
+\item[{streaming chanend}]{output, }
+\item[{unsigned}]{value}
+\end{DoxyParamCaption}
+)}\label{_swallow-helpers_8xc_afbd3e0a5dbd4afafc3283a8a95fa750c}

@@ -1,0 +1,222 @@
+\hypertarget{_swallow-n_o_s_8xc}{}\section{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.xc File Reference}
+\label{_swallow-n_o_s_8xc}\index{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.\+xc@{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.\+xc}}
+{\ttfamily \#include $<$platform.\+h$>$}\\*
+{\ttfamily \#include $<$xs1.\+h$>$}\\*
+{\ttfamily \#include $<$print.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/helpers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/n\+O\+S\+\_\+asm.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/n\+O\+S.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/n\+O\+S\+\_\+client.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Swallow-\/n\+O\+S\+\_\+initial\+Functions.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a63f27a839bf3aba3712909a1c72a4778}{L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D}~0x1f02
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a6a5a49798a96db987404c8aa3b804fe3}{I\+M\+G\+\_\+\+W\+I\+D\+T\+H}~64
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a586da4866646908804a9378b486301cc}{I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H}~64
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a837ef5a691080a0d5029b79bb2e51bc4}{D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E}~4
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a5abfca151ab0db98334eff163e9bfc99}{N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N}~16
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a4679d8ea8690999a6c6c7c0cb245c879}{T\+H\+R\+E\+S\+H\+O\+L\+D}~30
+\item 
+\#define \hyperlink{_swallow-n_o_s_8xc_a42b7dc8959eae62cab5ef4b4fd010b7d}{C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_ae1b5dd3f0d009f2653c26907d24148db}{add\+New\+Chan\+Map\+Entry} (\hyperlink{structchan_mapping}{chan\+Mapping} chan\+Map\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a8cb31be9c44f9353186d8189adc6ab61}{M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S}\mbox{]}\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_aff3d0aba3f75b128f9002ba839271db8}{M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S}\mbox{]}, \hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} c, unsigned owner, unsigned index)
+\item 
+\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} \hyperlink{_swallow-n_o_s_8xc_add6720894053f57909489a1eebe35a6e}{lookup\+Chan\+Map\+Entry} (\hyperlink{structchan_mapping}{chan\+Mapping} chan\+Map\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a8cb31be9c44f9353186d8189adc6ab61}{M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S}\mbox{]}\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_aff3d0aba3f75b128f9002ba839271db8}{M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S}\mbox{]}, unsigned owner, unsigned index)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a4af9e7a814464d36612c21887f385818}{delete\+Chan\+Map\+Entry} (\hyperlink{structchan_mapping}{chan\+Mapping} chan\+Map\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a8cb31be9c44f9353186d8189adc6ab61}{M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S}\mbox{]}\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_aff3d0aba3f75b128f9002ba839271db8}{M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S}\mbox{]}, unsigned owner, unsigned index)
+\item 
+unsigned \hyperlink{_swallow-n_o_s_8xc_a2433ef0fa73b6c03c9a55759f746b150}{n\+O\+S\+\_\+do\+Action} (unsigned action, unsigned arg1, unsigned arg2, unsigned arg3, unsigned stacks\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a8cb31be9c44f9353186d8189adc6ab61}{M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S}\mbox{]}\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a21e454ec7311762ec0390b5c771791c1}{T\+H\+R\+E\+A\+D\+S\+T\+A\+C\+K\+S\+I\+Z\+E}\mbox{]}, \hyperlink{structchan_mapping}{chan\+Mapping} chan\+Map\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_a8cb31be9c44f9353186d8189adc6ab61}{M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S}\mbox{]}\mbox{[}\hyperlink{_swallow-n_o_s__asm_8h_aff3d0aba3f75b128f9002ba839271db8}{M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S}\mbox{]})
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a2cd9aef97d45770d39c254b773e83477}{n\+O\+S\+\_\+start} (chanend c)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_ac7320b6de82342e3f86191113d769de4}{event\+Test\+A} ()
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a2231d4c164203820f4b8cfe713d83825}{select1\+B} (chanend c1, chanend c2)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a0109b01a25654ddc42ced027dbfc9e13}{event\+Test\+B} ()
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a1aea871146af548036800eedb26082ed}{begin1} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a1abf6a01d834f9e290ee7456a9c8c207}{begin2} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a12670594797d9ef98eb862adb259f62d}{begin3} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_a385eac9a0ad5106c51bd7403df438c0f}{chan\+Test\+Parent} (chanend c)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_afd094debaf11a3195abc2c1631180bc5}{chan\+Test\+Child} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8xc_af7765801336637df1f7e4ac82af6ba25}{sink\+Sync} (chanend c)
+\item 
+int \hyperlink{_swallow-n_o_s_8xc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{_swallow-n_o_s_8xc_a6fe0f40e755f2408ae23015d343c3faa}{food}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_swallow-n_o_s_8xc_a42b7dc8959eae62cab5ef4b4fd010b7d}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L@{C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L}}
+\index{C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L@{C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+H\+I\+L\+D\+F\+I\+R\+S\+T\+C\+H\+A\+N\+N\+E\+L~1}\label{_swallow-n_o_s_8xc_a42b7dc8959eae62cab5ef4b4fd010b7d}
+\hypertarget{_swallow-n_o_s_8xc_a837ef5a691080a0d5029b79bb2e51bc4}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E@{D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E}}
+\index{D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E@{D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+V\+\_\+\+D\+E\+G\+R\+E\+E~4}\label{_swallow-n_o_s_8xc_a837ef5a691080a0d5029b79bb2e51bc4}
+\hypertarget{_swallow-n_o_s_8xc_a586da4866646908804a9378b486301cc}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H@{I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H@{I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+G\+\_\+\+L\+E\+N\+G\+T\+H~64}\label{_swallow-n_o_s_8xc_a586da4866646908804a9378b486301cc}
+\hypertarget{_swallow-n_o_s_8xc_a6a5a49798a96db987404c8aa3b804fe3}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!I\+M\+G\+\_\+\+W\+I\+D\+T\+H@{I\+M\+G\+\_\+\+W\+I\+D\+T\+H}}
+\index{I\+M\+G\+\_\+\+W\+I\+D\+T\+H@{I\+M\+G\+\_\+\+W\+I\+D\+T\+H}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{I\+M\+G\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+G\+\_\+\+W\+I\+D\+T\+H~64}\label{_swallow-n_o_s_8xc_a6a5a49798a96db987404c8aa3b804fe3}
+\hypertarget{_swallow-n_o_s_8xc_a63f27a839bf3aba3712909a1c72a4778}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D@{L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D}}
+\index{L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D@{L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+C\+A\+Ln\+O\+S\+C\+H\+A\+N\+E\+N\+D~0x1f02}\label{_swallow-n_o_s_8xc_a63f27a839bf3aba3712909a1c72a4778}
+\hypertarget{_swallow-n_o_s_8xc_a5abfca151ab0db98334eff163e9bfc99}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N@{N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N}}
+\index{N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N@{N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+U\+M\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N~16}\label{_swallow-n_o_s_8xc_a5abfca151ab0db98334eff163e9bfc99}
+\hypertarget{_swallow-n_o_s_8xc_a4679d8ea8690999a6c6c7c0cb245c879}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!T\+H\+R\+E\+S\+H\+O\+L\+D@{T\+H\+R\+E\+S\+H\+O\+L\+D}}
+\index{T\+H\+R\+E\+S\+H\+O\+L\+D@{T\+H\+R\+E\+S\+H\+O\+L\+D}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{T\+H\+R\+E\+S\+H\+O\+L\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+E\+S\+H\+O\+L\+D~30}\label{_swallow-n_o_s_8xc_a4679d8ea8690999a6c6c7c0cb245c879}
+
+
+\subsection{Function Documentation}
+\hypertarget{_swallow-n_o_s_8xc_ae1b5dd3f0d009f2653c26907d24148db}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!add\+New\+Chan\+Map\+Entry@{add\+New\+Chan\+Map\+Entry}}
+\index{add\+New\+Chan\+Map\+Entry@{add\+New\+Chan\+Map\+Entry}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{add\+New\+Chan\+Map\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}void add\+New\+Chan\+Map\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf chan\+Mapping}}]{chan\+Map\mbox{[}\+M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S\mbox{]}\mbox{[}\+M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S\mbox{]}, }
+\item[{{\bf channel}}]{c, }
+\item[{unsigned}]{owner, }
+\item[{unsigned}]{index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_ae1b5dd3f0d009f2653c26907d24148db}
+\hypertarget{_swallow-n_o_s_8xc_a1aea871146af548036800eedb26082ed}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!begin1@{begin1}}
+\index{begin1@{begin1}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{begin1}]{\setlength{\rightskip}{0pt plus 5cm}void begin1 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a1aea871146af548036800eedb26082ed}
+\hypertarget{_swallow-n_o_s_8xc_a1abf6a01d834f9e290ee7456a9c8c207}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!begin2@{begin2}}
+\index{begin2@{begin2}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{begin2}]{\setlength{\rightskip}{0pt plus 5cm}void begin2 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a1abf6a01d834f9e290ee7456a9c8c207}
+\hypertarget{_swallow-n_o_s_8xc_a12670594797d9ef98eb862adb259f62d}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!begin3@{begin3}}
+\index{begin3@{begin3}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{begin3}]{\setlength{\rightskip}{0pt plus 5cm}void begin3 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a12670594797d9ef98eb862adb259f62d}
+\hypertarget{_swallow-n_o_s_8xc_afd094debaf11a3195abc2c1631180bc5}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!chan\+Test\+Child@{chan\+Test\+Child}}
+\index{chan\+Test\+Child@{chan\+Test\+Child}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{chan\+Test\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void chan\+Test\+Child (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_afd094debaf11a3195abc2c1631180bc5}
+\hypertarget{_swallow-n_o_s_8xc_a385eac9a0ad5106c51bd7403df438c0f}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!chan\+Test\+Parent@{chan\+Test\+Parent}}
+\index{chan\+Test\+Parent@{chan\+Test\+Parent}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{chan\+Test\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}void chan\+Test\+Parent (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a385eac9a0ad5106c51bd7403df438c0f}
+\hypertarget{_swallow-n_o_s_8xc_a4af9e7a814464d36612c21887f385818}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!delete\+Chan\+Map\+Entry@{delete\+Chan\+Map\+Entry}}
+\index{delete\+Chan\+Map\+Entry@{delete\+Chan\+Map\+Entry}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{delete\+Chan\+Map\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}void delete\+Chan\+Map\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf chan\+Mapping}}]{chan\+Map\mbox{[}\+M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S\mbox{]}\mbox{[}\+M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S\mbox{]}, }
+\item[{unsigned}]{owner, }
+\item[{unsigned}]{index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a4af9e7a814464d36612c21887f385818}
+\hypertarget{_swallow-n_o_s_8xc_ac7320b6de82342e3f86191113d769de4}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!event\+Test\+A@{event\+Test\+A}}
+\index{event\+Test\+A@{event\+Test\+A}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{event\+Test\+A}]{\setlength{\rightskip}{0pt plus 5cm}void event\+Test\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_ac7320b6de82342e3f86191113d769de4}
+\hypertarget{_swallow-n_o_s_8xc_a0109b01a25654ddc42ced027dbfc9e13}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!event\+Test\+B@{event\+Test\+B}}
+\index{event\+Test\+B@{event\+Test\+B}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{event\+Test\+B}]{\setlength{\rightskip}{0pt plus 5cm}void event\+Test\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a0109b01a25654ddc42ced027dbfc9e13}
+\hypertarget{_swallow-n_o_s_8xc_add6720894053f57909489a1eebe35a6e}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!lookup\+Chan\+Map\+Entry@{lookup\+Chan\+Map\+Entry}}
+\index{lookup\+Chan\+Map\+Entry@{lookup\+Chan\+Map\+Entry}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{lookup\+Chan\+Map\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf channel} lookup\+Chan\+Map\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf chan\+Mapping}}]{chan\+Map\mbox{[}\+M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S\mbox{]}\mbox{[}\+M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S\mbox{]}, }
+\item[{unsigned}]{owner, }
+\item[{unsigned}]{index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_add6720894053f57909489a1eebe35a6e}
+\hypertarget{_swallow-n_o_s_8xc_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!main@{main}}
+\index{main@{main}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{_swallow-n_o_s_8xc_a2433ef0fa73b6c03c9a55759f746b150}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!n\+O\+S\+\_\+do\+Action@{n\+O\+S\+\_\+do\+Action}}
+\index{n\+O\+S\+\_\+do\+Action@{n\+O\+S\+\_\+do\+Action}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{n\+O\+S\+\_\+do\+Action}]{\setlength{\rightskip}{0pt plus 5cm}unsigned n\+O\+S\+\_\+do\+Action (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{action, }
+\item[{unsigned}]{arg1, }
+\item[{unsigned}]{arg2, }
+\item[{unsigned}]{arg3, }
+\item[{unsigned}]{stacks\mbox{[}\+M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S\mbox{]}\mbox{[}\+T\+H\+R\+E\+A\+D\+S\+T\+A\+C\+K\+S\+I\+Z\+E\mbox{]}, }
+\item[{{\bf chan\+Mapping}}]{chan\+Map\mbox{[}\+M\+A\+X\+L\+O\+C\+A\+L\+T\+H\+R\+E\+A\+D\+S\mbox{]}\mbox{[}\+M\+A\+X\+T\+H\+R\+E\+A\+D\+C\+H\+A\+N\+N\+E\+L\+S\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a2433ef0fa73b6c03c9a55759f746b150}
+\hypertarget{_swallow-n_o_s_8xc_a2cd9aef97d45770d39c254b773e83477}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!n\+O\+S\+\_\+start@{n\+O\+S\+\_\+start}}
+\index{n\+O\+S\+\_\+start@{n\+O\+S\+\_\+start}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{n\+O\+S\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}void n\+O\+S\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a2cd9aef97d45770d39c254b773e83477}
+\hypertarget{_swallow-n_o_s_8xc_a2231d4c164203820f4b8cfe713d83825}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!select1\+B@{select1\+B}}
+\index{select1\+B@{select1\+B}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{select1\+B}]{\setlength{\rightskip}{0pt plus 5cm}void select1\+B (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c1, }
+\item[{chanend}]{c2}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_a2231d4c164203820f4b8cfe713d83825}
+\hypertarget{_swallow-n_o_s_8xc_af7765801336637df1f7e4ac82af6ba25}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!sink\+Sync@{sink\+Sync}}
+\index{sink\+Sync@{sink\+Sync}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{sink\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}void sink\+Sync (
+\begin{DoxyParamCaption}
+\item[{chanend}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8xc_af7765801336637df1f7e4ac82af6ba25}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_swallow-n_o_s_8xc_a6fe0f40e755f2408ae23015d343c3faa}{}\index{Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}!food@{food}}
+\index{food@{food}!Swallow-\/n\+O\+S.\+xc@{Swallow-\/n\+O\+S.\+xc}}
+\subsubsection[{food}]{\setlength{\rightskip}{0pt plus 5cm}unsigned food}\label{_swallow-n_o_s_8xc_a6fe0f40e755f2408ae23015d343c3faa}

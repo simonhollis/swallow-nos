@@ -1,0 +1,25 @@
+var _swallow_helpers_8h =
+[
+    [ "channel", "_swallow-helpers_8h.html#aa6ea79b51cb1a11714e12ddd689dd15c", null ],
+    [ "endpoint", "_swallow-helpers_8h.html#ab1358ba323e68c233f100abc11bdc7ea", null ],
+    [ "buildChanId", "_swallow-helpers_8h.html#a096630d81be63da93af11a77c35163e8", null ],
+    [ "chanendListen", "_swallow-helpers_8h.html#aaa5c571b3aa5a11f655428214842d032", null ],
+    [ "channelListen", "_swallow-helpers_8h.html#a9e2783667dec0a1a6a2c657b3b46e1a2", null ],
+    [ "channelReceiveWord", "_swallow-helpers_8h.html#a7af156772a17978b0db4f1f209da7bdd", null ],
+    [ "channelReceiveWords", "_swallow-helpers_8h.html#a7b41998c9b6ff64733cf388aab7f21b1", null ],
+    [ "channelSendWord", "_swallow-helpers_8h.html#a722c9a50b1ba184815f3ca8de58c331f", null ],
+    [ "channelSendWords", "_swallow-helpers_8h.html#ab09ce1b802b3c3c3a13b80db7139191d", null ],
+    [ "connectChanend", "_swallow-helpers_8h.html#a0802ca85c9b6028a240888f1240189bb", null ],
+    [ "connectChannel", "_swallow-helpers_8h.html#a4fc6da8d25bce838539832b011089fb2", null ],
+    [ "connectNewChannel", "_swallow-helpers_8h.html#aeea118ae867cb65d59545753ddabe89e", null ],
+    [ "coreReceiveWords", "_swallow-helpers_8h.html#a5a8bbe6d0555db4fdc66f62f95172ae9", null ],
+    [ "coreSendBytes", "_swallow-helpers_8h.html#acc59b0df58083b2fff81ba5b613af1fd", null ],
+    [ "coreSendWords", "_swallow-helpers_8h.html#a5d52126053c641a753735b5461df9059", null ],
+    [ "freeChanend_sjh", "_swallow-helpers_8h.html#a56d8d0cdb17711aaf5c731be0b649e12", null ],
+    [ "getNewChannel", "_swallow-helpers_8h.html#ae766ff2b68dabf370997e2005ce2dc4d", null ],
+    [ "getSpecificLocalChannel", "_swallow-helpers_8h.html#ad40c30ba1915e96e0addb8cc251e30c4", null ],
+    [ "nodeIndexToId", "_swallow-helpers_8h.html#a58f5683194e9d62e69b9d73ce1416055", null ],
+    [ "rowColToNodeId", "_swallow-helpers_8h.html#aba1d74fda7711c040523169918cf186c", null ],
+    [ "SwPrintString", "_swallow-helpers_8h.html#a75059f09d272a119461afa4ac7218e43", null ],
+    [ "SwPrintUnsigned", "_swallow-helpers_8h.html#a58fe1935cb54923b0dab67c397371489", null ]
+];

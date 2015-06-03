@@ -1,0 +1,28 @@
+var _swallow_helpers_8xc =
+[
+    [ "BOARDS_W", "_swallow-helpers_8xc.html#af6442d33deb8d3d0dcb8ee5c37f65a17", null ],
+    [ "DEBUG_STRING_MAXLENGTH", "_swallow-helpers_8xc.html#aef2d817325c72b838c4f25e92bdc8134", null ],
+    [ "buildChanId", "_swallow-helpers_8xc.html#a096630d81be63da93af11a77c35163e8", null ],
+    [ "chanendListen", "_swallow-helpers_8xc.html#a6460b117129f2bfbd74efd3cee5da9e0", null ],
+    [ "channelListen", "_swallow-helpers_8xc.html#a9e2783667dec0a1a6a2c657b3b46e1a2", null ],
+    [ "channelReceiveWord", "_swallow-helpers_8xc.html#a7af156772a17978b0db4f1f209da7bdd", null ],
+    [ "channelReceiveWords", "_swallow-helpers_8xc.html#a7b41998c9b6ff64733cf388aab7f21b1", null ],
+    [ "channelSendWord", "_swallow-helpers_8xc.html#a722c9a50b1ba184815f3ca8de58c331f", null ],
+    [ "channelSendWords", "_swallow-helpers_8xc.html#ab09ce1b802b3c3c3a13b80db7139191d", null ],
+    [ "connectChanend", "_swallow-helpers_8xc.html#acea152b967b1954ceec7cc18acaec48d", null ],
+    [ "connectChannel", "_swallow-helpers_8xc.html#a4fc6da8d25bce838539832b011089fb2", null ],
+    [ "coreReceiveWords", "_swallow-helpers_8xc.html#adfe491501333abd26b2966f39837723e", null ],
+    [ "coreSendBytes", "_swallow-helpers_8xc.html#a38576ce5d46bc65b1e600ab2e793ab71", null ],
+    [ "coreSendWords", "_swallow-helpers_8xc.html#aef17d0ecd6fc0b716d8bd40a189075f7", null ],
+    [ "freeChanend_sjh", "_swallow-helpers_8xc.html#acb55a62300229638e574bc20c8d8d245", null ],
+    [ "freeChannel", "_swallow-helpers_8xc.html#a7821533e38b1011d9ce4ba11bb458136", null ],
+    [ "getNewChannel", "_swallow-helpers_8xc.html#ae766ff2b68dabf370997e2005ce2dc4d", null ],
+    [ "getSpecificLocalChannel", "_swallow-helpers_8xc.html#ad40c30ba1915e96e0addb8cc251e30c4", null ],
+    [ "nodeIndexToId", "_swallow-helpers_8xc.html#a58f5683194e9d62e69b9d73ce1416055", null ],
+    [ "printReceiveWords", "_swallow-helpers_8xc.html#ad2bd3e35e98c361a123802d89f23292d", null ],
+    [ "printSendWords", "_swallow-helpers_8xc.html#a1c66ffa18e1dfc18667ee4aedfc32b25", null ],
+    [ "rowColToNodeId", "_swallow-helpers_8xc.html#aba1d74fda7711c040523169918cf186c", null ],
+    [ "stringToChars", "_swallow-helpers_8xc.html#a2da912eccb2d640abfb2a3ebdbf3efbd", null ],
+    [ "SwPrintString", "_swallow-helpers_8xc.html#a454f40f7afcac737d38f0c5774dd62b8", null ],
+    [ "SwPrintUnsigned", "_swallow-helpers_8xc.html#afbd3e0a5dbd4afafc3283a8a95fa750c", null ]
+];

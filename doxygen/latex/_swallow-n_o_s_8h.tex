@@ -1,0 +1,94 @@
+\hypertarget{_swallow-n_o_s_8h}{}\section{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.h File Reference}
+\label{_swallow-n_o_s_8h}\index{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.\+h@{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_swallow-n_o_s_8h_a8aed423e695e022d571b555e291399aa}{get\+\_\+start\+Address}(f,  var)~asm(\char`\"{}ldap r11, \char`\"{} \#f \char`\"{}; mov \%0, r11\char`\"{}\+:\char`\"{}=r\char`\"{}(var)\+::\char`\"{}r11\char`\"{});
+\item 
+\#define \hyperlink{_swallow-n_o_s_8h_a9c9a01b3a3fd630d58932179abb1498a}{conc\+\_\+macro}(str1,  str2)~\#str1\#str2
+\item 
+\#define \hyperlink{_swallow-n_o_s_8h_a685ddebdd81eb8bdfc7cffaffdd6169e}{get\+\_\+stack\+Size\+\_\+macro2}(f,  var)~asm(\char`\"{}ldc \%0, \char`\"{} f \+:\char`\"{}=r\char`\"{}(var)\+:);
+\item 
+\#define \hyperlink{_swallow-n_o_s_8h_a6a81e98097c9b47b321e3565997316f0}{get\+\_\+stack\+Size}(f,  var)~\hyperlink{_swallow-n_o_s_8h_a685ddebdd81eb8bdfc7cffaffdd6169e}{get\+\_\+stack\+Size\+\_\+macro2}(\hyperlink{_swallow-n_o_s_8h_a9c9a01b3a3fd630d58932179abb1498a}{conc\+\_\+macro}(f, .nstackwords),var)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_swallow-n_o_s_8h_a1aea871146af548036800eedb26082ed}{begin1} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8h_a1abf6a01d834f9e290ee7456a9c8c207}{begin2} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8h_a12670594797d9ef98eb862adb259f62d}{begin3} (unsigned parent\+I\+D, unsigned rank)
+\item 
+void \hyperlink{_swallow-n_o_s_8h_ae497526406001473d1b17617356cfaff}{select1\+B} (unsigned c1, unsigned c2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_swallow-n_o_s_8h_a9c9a01b3a3fd630d58932179abb1498a}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!conc\+\_\+macro@{conc\+\_\+macro}}
+\index{conc\+\_\+macro@{conc\+\_\+macro}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{conc\+\_\+macro}]{\setlength{\rightskip}{0pt plus 5cm}\#define conc\+\_\+macro(
+\begin{DoxyParamCaption}
+\item[{}]{str1, }
+\item[{}]{str2}
+\end{DoxyParamCaption}
+)~\#str1\#str2}\label{_swallow-n_o_s_8h_a9c9a01b3a3fd630d58932179abb1498a}
+\hypertarget{_swallow-n_o_s_8h_a6a81e98097c9b47b321e3565997316f0}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!get\+\_\+stack\+Size@{get\+\_\+stack\+Size}}
+\index{get\+\_\+stack\+Size@{get\+\_\+stack\+Size}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{get\+\_\+stack\+Size}]{\setlength{\rightskip}{0pt plus 5cm}\#define get\+\_\+stack\+Size(
+\begin{DoxyParamCaption}
+\item[{}]{f, }
+\item[{}]{var}
+\end{DoxyParamCaption}
+)~{\bf get\+\_\+stack\+Size\+\_\+macro2}({\bf conc\+\_\+macro}(f, .nstackwords),var)}\label{_swallow-n_o_s_8h_a6a81e98097c9b47b321e3565997316f0}
+\hypertarget{_swallow-n_o_s_8h_a685ddebdd81eb8bdfc7cffaffdd6169e}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!get\+\_\+stack\+Size\+\_\+macro2@{get\+\_\+stack\+Size\+\_\+macro2}}
+\index{get\+\_\+stack\+Size\+\_\+macro2@{get\+\_\+stack\+Size\+\_\+macro2}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{get\+\_\+stack\+Size\+\_\+macro2}]{\setlength{\rightskip}{0pt plus 5cm}\#define get\+\_\+stack\+Size\+\_\+macro2(
+\begin{DoxyParamCaption}
+\item[{}]{f, }
+\item[{}]{var}
+\end{DoxyParamCaption}
+)~asm(\char`\"{}ldc \%0, \char`\"{} f \+:\char`\"{}=r\char`\"{}(var)\+:);}\label{_swallow-n_o_s_8h_a685ddebdd81eb8bdfc7cffaffdd6169e}
+\hypertarget{_swallow-n_o_s_8h_a8aed423e695e022d571b555e291399aa}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!get\+\_\+start\+Address@{get\+\_\+start\+Address}}
+\index{get\+\_\+start\+Address@{get\+\_\+start\+Address}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{get\+\_\+start\+Address}]{\setlength{\rightskip}{0pt plus 5cm}\#define get\+\_\+start\+Address(
+\begin{DoxyParamCaption}
+\item[{}]{f, }
+\item[{}]{var}
+\end{DoxyParamCaption}
+)~asm(\char`\"{}ldap r11, \char`\"{} \#f \char`\"{}; mov \%0, r11\char`\"{}\+:\char`\"{}=r\char`\"{}(var)\+::\char`\"{}r11\char`\"{});}\label{_swallow-n_o_s_8h_a8aed423e695e022d571b555e291399aa}
+
+
+\subsection{Function Documentation}
+\hypertarget{_swallow-n_o_s_8h_a1aea871146af548036800eedb26082ed}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!begin1@{begin1}}
+\index{begin1@{begin1}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{begin1}]{\setlength{\rightskip}{0pt plus 5cm}void begin1 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8h_a1aea871146af548036800eedb26082ed}
+\hypertarget{_swallow-n_o_s_8h_a1abf6a01d834f9e290ee7456a9c8c207}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!begin2@{begin2}}
+\index{begin2@{begin2}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{begin2}]{\setlength{\rightskip}{0pt plus 5cm}void begin2 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8h_a1abf6a01d834f9e290ee7456a9c8c207}
+\hypertarget{_swallow-n_o_s_8h_a12670594797d9ef98eb862adb259f62d}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!begin3@{begin3}}
+\index{begin3@{begin3}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{begin3}]{\setlength{\rightskip}{0pt plus 5cm}void begin3 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{rank}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8h_a12670594797d9ef98eb862adb259f62d}
+\hypertarget{_swallow-n_o_s_8h_ae497526406001473d1b17617356cfaff}{}\index{Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}!select1\+B@{select1\+B}}
+\index{select1\+B@{select1\+B}!Swallow-\/n\+O\+S.\+h@{Swallow-\/n\+O\+S.\+h}}
+\subsubsection[{select1\+B}]{\setlength{\rightskip}{0pt plus 5cm}void select1\+B (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{c1, }
+\item[{unsigned}]{c2}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s_8h_ae497526406001473d1b17617356cfaff}

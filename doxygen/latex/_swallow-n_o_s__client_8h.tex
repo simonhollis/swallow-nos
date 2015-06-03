@@ -1,0 +1,105 @@
+\hypertarget{_swallow-n_o_s__client_8h}{}\section{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S\+\_\+client.h File Reference}
+\label{_swallow-n_o_s__client_8h}\index{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S\+\_\+client.\+h@{C\+:/work/swallow-\/nos/src/\+Swallow-\/n\+O\+S\+\_\+client.\+h}}
+{\ttfamily \#include \char`\"{}Swallow-\/helpers.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_swallow-n_o_s__client_8h_a0f2d4769f58abacde479814cdcc163b9}{p1} (unsigned c)
+\item 
+void \hyperlink{_swallow-n_o_s__client_8h_a0107d4627a5f64926798ff0690217834}{child1} (unsigned parentid)
+\item 
+unsigned \hyperlink{_swallow-n_o_s__client_8h_abeef5682e4ba7916b86579f520b189ca}{client\+\_\+create\+Thread} (unsigned thread\+Identifier, unsigned stack\+Size, unsigned child\+Rank, unsigned tile\+Index)
+\item 
+\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} \hyperlink{_swallow-n_o_s__client_8h_a6936b888ab1416c7d5d6f95ed9fc606a}{client\+\_\+connect\+New\+Local\+Channel} (unsigned channel\+Index, \hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} destination)
+\item 
+\hyperlink{_swallow-helpers_8h_aa6ea79b51cb1a11714e12ddd689dd15c}{channel} \hyperlink{_swallow-n_o_s__client_8h_a4984ae0186883d0688f0bfdbebbcbca6}{client\+\_\+allocate\+New\+Local\+Channel} (unsigned channel\+Index)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-n_o_s__client_8h_a5a8640c5003b3c5ecae959408ec3296a}{client\+\_\+get\+Local\+Channel\+Dest} (unsigned channel\+Index)
+\item 
+void \hyperlink{_swallow-n_o_s__client_8h_a64b8d179533337ed89f213bd716c3e27}{client\+\_\+update\+Local\+Channel\+Dest} (unsigned channel\+Index, \hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} destination)
+\item 
+void \hyperlink{_swallow-n_o_s__client_8h_a12c5cb8b4a5cac908bdb6c8db3ec5589}{client\+\_\+release\+Local\+Channel} (unsigned channel\+Index)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-n_o_s__client_8h_ae2ecc339710d5a5e526001f3dba37d16}{client\+\_\+lookup\+Local\+Chanend} (unsigned channel\+Index)
+\item 
+\hyperlink{_swallow-helpers_8h_ab1358ba323e68c233f100abc11bdc7ea}{endpoint} \hyperlink{_swallow-n_o_s__client_8h_a382d0d1a4ba77407e420019041197d66}{client\+\_\+lookup\+Parent\+Chanend} (unsigned parent\+I\+D, unsigned channel\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_swallow-n_o_s__client_8h_a0107d4627a5f64926798ff0690217834}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!child1@{child1}}
+\index{child1@{child1}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{child1}]{\setlength{\rightskip}{0pt plus 5cm}void child1 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parentid}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a0107d4627a5f64926798ff0690217834}
+\hypertarget{_swallow-n_o_s__client_8h_a4984ae0186883d0688f0bfdbebbcbca6}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+allocate\+New\+Local\+Channel@{client\+\_\+allocate\+New\+Local\+Channel}}
+\index{client\+\_\+allocate\+New\+Local\+Channel@{client\+\_\+allocate\+New\+Local\+Channel}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+allocate\+New\+Local\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf channel} client\+\_\+allocate\+New\+Local\+Channel (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a4984ae0186883d0688f0bfdbebbcbca6}
+\hypertarget{_swallow-n_o_s__client_8h_a6936b888ab1416c7d5d6f95ed9fc606a}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+connect\+New\+Local\+Channel@{client\+\_\+connect\+New\+Local\+Channel}}
+\index{client\+\_\+connect\+New\+Local\+Channel@{client\+\_\+connect\+New\+Local\+Channel}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+connect\+New\+Local\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf channel} client\+\_\+connect\+New\+Local\+Channel (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index, }
+\item[{{\bf endpoint}}]{destination}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a6936b888ab1416c7d5d6f95ed9fc606a}
+\hypertarget{_swallow-n_o_s__client_8h_abeef5682e4ba7916b86579f520b189ca}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+create\+Thread@{client\+\_\+create\+Thread}}
+\index{client\+\_\+create\+Thread@{client\+\_\+create\+Thread}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+create\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}unsigned client\+\_\+create\+Thread (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{thread\+Identifier, }
+\item[{unsigned}]{stack\+Size, }
+\item[{unsigned}]{child\+Rank, }
+\item[{unsigned}]{tile\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_abeef5682e4ba7916b86579f520b189ca}
+\hypertarget{_swallow-n_o_s__client_8h_a5a8640c5003b3c5ecae959408ec3296a}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+get\+Local\+Channel\+Dest@{client\+\_\+get\+Local\+Channel\+Dest}}
+\index{client\+\_\+get\+Local\+Channel\+Dest@{client\+\_\+get\+Local\+Channel\+Dest}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+get\+Local\+Channel\+Dest}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} client\+\_\+get\+Local\+Channel\+Dest (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a5a8640c5003b3c5ecae959408ec3296a}
+\hypertarget{_swallow-n_o_s__client_8h_ae2ecc339710d5a5e526001f3dba37d16}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+lookup\+Local\+Chanend@{client\+\_\+lookup\+Local\+Chanend}}
+\index{client\+\_\+lookup\+Local\+Chanend@{client\+\_\+lookup\+Local\+Chanend}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+lookup\+Local\+Chanend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} client\+\_\+lookup\+Local\+Chanend (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_ae2ecc339710d5a5e526001f3dba37d16}
+\hypertarget{_swallow-n_o_s__client_8h_a382d0d1a4ba77407e420019041197d66}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+lookup\+Parent\+Chanend@{client\+\_\+lookup\+Parent\+Chanend}}
+\index{client\+\_\+lookup\+Parent\+Chanend@{client\+\_\+lookup\+Parent\+Chanend}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+lookup\+Parent\+Chanend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf endpoint} client\+\_\+lookup\+Parent\+Chanend (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{parent\+I\+D, }
+\item[{unsigned}]{channel\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a382d0d1a4ba77407e420019041197d66}
+\hypertarget{_swallow-n_o_s__client_8h_a12c5cb8b4a5cac908bdb6c8db3ec5589}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+release\+Local\+Channel@{client\+\_\+release\+Local\+Channel}}
+\index{client\+\_\+release\+Local\+Channel@{client\+\_\+release\+Local\+Channel}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+release\+Local\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void client\+\_\+release\+Local\+Channel (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a12c5cb8b4a5cac908bdb6c8db3ec5589}
+\hypertarget{_swallow-n_o_s__client_8h_a64b8d179533337ed89f213bd716c3e27}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!client\+\_\+update\+Local\+Channel\+Dest@{client\+\_\+update\+Local\+Channel\+Dest}}
+\index{client\+\_\+update\+Local\+Channel\+Dest@{client\+\_\+update\+Local\+Channel\+Dest}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{client\+\_\+update\+Local\+Channel\+Dest}]{\setlength{\rightskip}{0pt plus 5cm}void client\+\_\+update\+Local\+Channel\+Dest (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{channel\+Index, }
+\item[{{\bf endpoint}}]{destination}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a64b8d179533337ed89f213bd716c3e27}
+\hypertarget{_swallow-n_o_s__client_8h_a0f2d4769f58abacde479814cdcc163b9}{}\index{Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}!p1@{p1}}
+\index{p1@{p1}!Swallow-\/n\+O\+S\+\_\+client.\+h@{Swallow-\/n\+O\+S\+\_\+client.\+h}}
+\subsubsection[{p1}]{\setlength{\rightskip}{0pt plus 5cm}void p1 (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{c}
+\end{DoxyParamCaption}
+)}\label{_swallow-n_o_s__client_8h_a0f2d4769f58abacde479814cdcc163b9}
