@@ -1,7 +1,7 @@
 Swallow nOS Readme
 .............
 
-:Version: 0.1
+:Version: 0.3
 :Status: Beta
 :Maintainer: http://github.com/simonhollis
 :Description: nano-sized operating system for University of Bristol Swallow system.
