@@ -10,10 +10,22 @@ Swallow nOS Readme
 Overview
 ========
 
-This repository contains the source of the nOS (nano-Operating System) project.
+* This repository contains the source of the nOS (nano-Operating System) project.
 nOS is a tiny, distributed OS designed to run on the Swallow many-core system
 developed by Simon Hollis at the University of Bristol 
-(http://www.cs.bris.ac.uk/Research/Micro/swallow.jsp)
+[http://swallow-project.github.io/]
+
+* Swallow wiki: [http://swallow-project.github.io/wiki-swallow/index.html]
+(old site: http://www.cs.bris.ac.uk/Research/Micro/swallow.jsp)
+
+
+Documentation
+=============
+
+*API*
+doxygen-based documentation for the nOS API is available in this repository in the 'doxygen' folder:
+[http://swallow-project.github.io/doxygen-swallow-nos/html/files.html]
+(old website: http://www.cs.bris.ac.uk/Research/Micro/swallow.jsp)
 
 
 Build requisites
